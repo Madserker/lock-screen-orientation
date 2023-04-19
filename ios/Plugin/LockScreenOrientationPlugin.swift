@@ -17,17 +17,17 @@ public class LockScreenOrientationPlugin: CAPPlugin {
     }
 
     @objc func lockOrientationToLandscape(_ call: CAPPluginCall) {
-        let value = call.getString("value") ?? ""
+        implementation.lockOrientationToLandscape();
         call.resolve()
     }
 
     @objc func lockOrientationToPortrait(_ call: CAPPluginCall) {
-        let value = call.getString("value") ?? ""
+        implementation.lockOrientationToPortrait();
         call.resolve()
     }
 
     @objc func unlockOrientation(_ call: CAPPluginCall) {
-        let value = call.getString("value") ?? ""
+        implementation.unlockOrientation();
         call.resolve()
     }
 }
