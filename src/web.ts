@@ -7,15 +7,15 @@ export class LockScreenOrientationWeb
   implements LockScreenOrientationPlugin
 {
   lockOrientationToLandscape(): Promise<void> {
-    throw new Error('Method not implemented.');
+    return this.lockOrientationToLandscape();
   }
   
   lockOrientationToPortrait(): Promise<void> {
-    throw new Error('Method not implemented.');
+    return this.lockOrientationToPortrait();
   }
 
   unlockOrientation(): Promise<void> {
-    throw new Error('Method not implemented.');
+    return this.unlockOrientation();
   }
   
   async echo(options: { value: string }): Promise<{ value: string }> {

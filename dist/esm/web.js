@@ -1,13 +1,13 @@
 import { WebPlugin } from '@capacitor/core';
 export class LockScreenOrientationWeb extends WebPlugin {
     lockOrientationToLandscape() {
-        throw new Error('Method not implemented.');
+        return this.lockOrientationToLandscape();
     }
     lockOrientationToPortrait() {
-        throw new Error('Method not implemented.');
+        return this.lockOrientationToPortrait();
     }
     unlockOrientation() {
-        throw new Error('Method not implemented.');
+        return this.unlockOrientation();
     }
     async echo(options) {
         console.log('ECHO', options);
